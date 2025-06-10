@@ -1,0 +1,115 @@
+body{
+    min-height: 100vh;
+    background: black;
+}
+@font-face {
+    font-family: 'XPLor';
+    src: url(../font/XPLOR_Bold-Regular.otf);
+}
+@font-face {
+    font-family: 'alag';
+    src: url(../font/alagard-12px-unicode.otf);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+}
+.logo{
+    background: url("../img/15.jpg");
+    background-size: cover;
+    border-radius: 10px;
+    height: auto;
+    width: 20%;
+    aspect-ratio: 4/1;
+    box-shadow: inset 2px 2px 5px rgba(240, 219, 199, 0.5), 1px 1px 5px rgba(255,255,255,1);
+    flex-grow: 0;
+}
+.nav{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-size: calc(0.5em+1vw);
+    color: azure;
+    flex-grow: 1;
+    font-family: 'alag'
+}
+
+.nav-item{
+    box-sizing: border-box;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+.nav-item:hover{
+    text-shadow: 5px 5px 10px #d171b9, 1px 1px 1px #6d50f1;
+}
+.bg-line{
+    background: url("../img/11.jpg") no-repeat transparent;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 5/1;
+    margin: 25 px 0;
+}
+.head{
+    font-family: 'XPLor';
+    font-size: calc(1.5rem + 5vw);
+    text-align: center;
+    letter-spacing: 2rem;
+    color: beige;
+    text-shadow: 2px 2px 1px #000;
+}
+
+.line{
+    display: flex;
+    margin: 25px auto;
+    width: 80vw;
+}
+.img1{
+    object-fit: scale-down;
+    flex: 1 1 50%;
+}
+.text1{
+    color: white;
+    font-size: calc(0.5em + 1vw);
+    margin: 0px 10px 10px 20px;
+    flex:1 1 50%;
+}
+.img2{
+    object-fit: scale-down;
+    flex: 1 1 50%;
+}
+.img2 img, .img1 img{
+    width: 100%;
+    height: auto;
+}
+.text2{
+    color: white;
+    font-size: calc(0.5em + 1vw);
+    margin: 0px 10px 10px 20px;
+    flex:1 1 50%;
+}
+.footer{
+    color: rgb(178, 179, 180);
+    display: flex;
+    width: 100%;
+    background-color: azure;
+}
+.footer-nav{
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+.icons{
+    display: flex;
+    width: 30vw;
+    justify-content: space-around;
+    align-items: center;
+}
